@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <!--MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <script src="https://kit.fontawesome.com/052d5096a7.js" crossorigin="anonymous"></script>
+</head>
+<body class="sign-in">
+    <div class="top">
+        <div class="logo">
+            <img src="./images/logo.png">
+            <h2>AOLI<span class="danger">VEIRA</span></h2>
+        </div>
+        <div class="theme-toggler">
+            <span id="spanLight" class="material-icons-sharp active">light_mode</span>
+            <span id="spanDark" class="material-icons-sharp">dark_mode</span>
+        </div>
+    </div>
+        
+        <main>
+            <div class="container">
+                <div class="content first-content">
+                    <div class="first-column">
+                        <h2 class="title">Welcome back!</h2>
+                        <p class="description">To keep connected with us</p>
+                        <p class="description">Please login with your personal info</p>
+                        <button id="signin" class="btn btn-primary">Sign In</button>
+                    </div>
+                    <div class="second-column">
+                        <h2 class="title">Create Account</h2>
+                        <div class="social-media">
+                            <ul class="list-social-media">
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li>
+                                </a>
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-google"></i></li>
+                                </a>
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li>
+                                </a>
+                            </ul>
+                        </div><!--social media-->
+                        <p class="description">or use your email for registration</p>
+                        <form class="form">
+                            <label class="label-input">
+                                <span class="material-icons-sharp icon-modify">person</span>
+                                <input type="text" title="" placeholder="Name">
+                            </label>
+                            <label class="label-input">
+                                <span class="material-icons-sharp icon-modify">email</span>
+                                <input type="email" placeholder="Email">
+                            </label>
+                            <label class="label-input">
+                                <span class="material-icons-sharp icon-modify">lock</span>
+                                <input type="password" placeholder="Password">
+                            </label>
+                            <button class="btn btn-second">Sign Up</button>
+                        </form>
+                    </div><!--second column-->
+                </div><!--first content-->
+                <div class="content second-content">
+                    <div class="first-column">
+                        <h2 class="title">Hello, friend!</h2>
+                        <p class="description">Enter your personal details</p>
+                        <p class="description">and start journey with us</p>
+                        <button id="signup" class="btn btn-primary">Sign Up</button>
+                    </div>
+                    <div class="second-column">
+                        <h2 class="title">Sign In to developer</h2>
+                        <div class="social-media">
+                            <ul class="list-social-media">
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li>
+                                </a>
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-google"></i></li>
+                                </a>
+                                <a href="#">
+                                    <li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li>
+                                </a>
+                            </ul>
+                        </div><!--social media-->
+                        <p class="description">or use your email account</p>
+                        <form class="form">
+                            <label class="label-input">
+                                <span class="material-icons-sharp icon-modify">email</span>
+                                <input type="email" placeholder="Email">
+                            </label>
+                            <label class="label-input">
+                                <span class="material-icons-sharp icon-modify">lock</span>
+                                <input type="password" placeholder="Password">
+                            </label>
+                            <a href="#">forgot your password?</a>
+                            <button class="btn btn-second">Sign In</button>
+                        </form>
+                    </div><!--second column-->
+                </div><!--second content-->
+            </div>
+        </main>
+        <!--==================END OF MAIN==================-->
+ 
+    <!--==================== IMPORT JS =====================-->
+    <script src="./js/orders.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

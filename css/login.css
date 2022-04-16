@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+a{
+    color: var(--color-dark);
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.sucess{
+    color: var(--color-sucess);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    background: var(--color-light);
+    height: 10%;
+}
+
+.top .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.top .logo img{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-info-light);
+    border-radius: var(--border-radius-3);
+    margin-left: 2rem;
+}
+
+.top .theme-toggler{
+    background: var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    margin-right: 2rem;
+}
+
+.top .theme-toggler span{
+    font-size: 1.1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .theme-toggler span.active{
+    background: var(--color-info-dark);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+/* ==================== END OF TOP ====================*/
+
+main{
+    height: 80%;
+    margin-top: 1.4rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content{
+    border-radius: var(--border-radius-3);
+    height: 80%;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    background: var(--color-white);
+    border-top-left-radius: var(--border-radius-3);
+    border-bottom-left-radius: var(--border-radius-3);
+}
+
+/*================================= first content ======================*/
+.first-content{
+    display: flex;
+    background: var(--color-light);
+}
+
+.first-content .second-column{
+    z-index: 11;
+}
+
+.first-column{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media{
+    display: flex;
+    text-align: center;
+    margin: 0.6rem;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.item-social-media{
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.item-social-media:hover{
+    background: var(--color-dark-variant);
+    transition: all 300ms ease;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 40px;
+    border: none;
+    background: white;
+    border-radius: var(--border-radius-1);
+    text-align: start;
+    width: 100%;
+}
+
+.label-input{
+    display: flex;
+    background: white;
+    align-items: center;
+    margin: 8px;
+    border-radius: var(--border-radius-1);
+}
+
+.icon-modify{
+    padding: 0 7px;
+    color: #363949;
+}
+
+/*====================================== BUTTON ======================================*/
+.btn{
+    border-radius: var(--border-radius-3);
+    padding: 10px 50px;
+    cursor: pointer;
+    width: 160px;
+    height: 3rem;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.btn-primary{
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+.btn-primary:hover{
+    background: var(--color-light);
+    color: var(--color-dark);
+    transition: all 300ms ease;
+}
+
+.btn-second{
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+.btn-second:hover{
+    background: var(--color-info-dark);
+    color: var(--color-white);
+    transition: all 300ms ease;
+}
+
+/*===================== second content ================*/
+
+.second-content{
+    display: flex;
+    position: absolute;
+}
+
+.second-content .first-column{
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column{
+    order: 1;
+    z-index: -1;
+}
+
+/*======================= log in and log out alternate ====================*/
+
+.sign-in .first-content .first-column,
+.sign-in .first-content .second-column{
+    z-index: -1;
+    opacity: 0;
+}
+
+.sign-in .second-content .first-column,
+.sign-in .second-content .second-column{
+    z-index: 11;
+}
+
+.sign-in .content::before{
+    left: 60%;
+    border-top-right-radius: var(--border-radius-3);
+    border-bottom-right-radius: var(--border-radius-3);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.sign-up .second-content .first-column,
+.sign-up .second-content .second-column{
+    z-index: -1;
+    opacity: 0;
+}
+
+.sign-up .first-content .first-column,
+.sign-up .first-content .second-column{
+    z-index: 11;
+}
+
+.sign-up .content::before{
+    left: 0%;
+}
+
+/*======================= log in and log out alternate using DARK THEME ====================*/
+
+.sign-in .first-content .first-column,
+.sign-in .first-content .second-column{
+    z-index: -1;
+    opacity: 0;
+}
+
+.sign-in .second-content .first-column,
+.sign-in .second-content .second-column{
+    z-index: 11;
+}
+
+.sign-in .content::before{
+    left: 60%;
+    border-top-right-radius: var(--border-radius-3);
+    border-bottom-right-radius: var(--border-radius-3);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.sign-up .second-content .first-column,
+.sign-up .second-content .second-column{
+    z-index: -1;
+    opacity: 0;
+}
+
+.sign-up .first-content .first-column,
+.sign-up .first-content .second-column{
+    z-index: 11;
+}
+
+.sign-up .content::before{
+    left: 0%;
+}
+
+/* ==================== MEDIA QUERIES ====================*/
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+/* ===================== MEDIA QUERIES 2 ==================*/
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo{
+        margin-left: 1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+    }
+
+
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background-color: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+
+    .right .top button span{
+        font-size: 2rem;
+    }
+}
+}
