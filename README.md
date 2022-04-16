@@ -1,1 +1,1 @@
-# This is my project from TCC - Universidade do Estado de Minas Gerais.
+# This is my project for TCC - Universidade do Estado de Minas Gerais.
